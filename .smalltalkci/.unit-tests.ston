@@ -2,14 +2,15 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'Buoy',
-      #directory : 'source',
+      #directory : '../source',
       #load : [ 'CI' ],
       #platforms : [  #pharo ]
     }
   ],
   #testing : {
     #coverage : {
-       #packages : [ 'Buoy*' ]
+      #packages : [ 'Buoy*' ],
+      #format: #lcov
     }
   }
 }
